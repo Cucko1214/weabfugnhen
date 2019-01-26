@@ -32,7 +32,7 @@
 	<main>
 		<div class="message">Please view this demo on a desktop.</div>
 		<div class="frame">
-			
+
 			<!--<nav class="demos">
 				<a class="demo" href="index.html">Demo 1</a>
 				<a class="demo" href="gallery.html">Demo 2</a>
@@ -47,7 +47,7 @@
 
 				<nav class="page-nav">
 
-					<a class="page-nav__item page-nav__item--close" href="#">Back</a>
+					<a class="page-nav__item page-nav__item--close" href="#">Back asd</a>
 				</nav>
 				<div class="pieces" style="background-image: url(img/1d.jpg)"></div>
 				<h2 class="content__title">Explore</h2>
@@ -62,19 +62,19 @@
 	<script>
 		{
 
-			document.addEventListener('click',function(e){
-    if(e.target && e.target.id == 'gugu'){console.log("hehe")}
- })
- document.querySelector('.pieces').addEventListener('click', function (event) {
-  if (event.target.classList.contains('someclass')) {
-    // Do something
-  }
-})
- function toggleDone (event) {
-  if (!event.target.matches('div')) return
-  console.log(event.target)
-  //We now have the correct input - we can manipulate the node here
-}
+			document.addEventListener('click', function (e) {
+				if (e.target && e.target.id == 'gugu') { console.log("hehe") }
+			})
+			document.querySelector('.pieces').addEventListener('click', function (event) {
+				if (event.target.classList.contains('someclass')) {
+					// Do something
+				}
+			})
+			function toggleDone(event) {
+				if (!event.target.matches('div')) return
+				console.log(event.target)
+				//We now have the correct input - we can manipulate the node here
+			}
 			console.log(z);
 
 			imagesLoaded(document.body, { background: true }, () => document.body.classList.remove('loading'));
@@ -120,68 +120,68 @@
 
 				});
 				function HTML() {
-					
+
 					var x = document.querySelectorAll("[data-row='2']");
 					var y = document.querySelectorAll("[data-row='1']");
-					let data=document.querySelectorAll("[data-row='2']")
+					let data = document.querySelectorAll("[data-row='2']")
 					console.log(document.querySelectorAll("[data-row='2']"));
 					console.log(data[0]);
-					data[0].id='huhu';
-					document.addEventListener('click',function(e){
-	if(e.target && e.target.className == 'piece')
-	{console.log("hehe");} else {console.log(e.target);}
- })
+					data[0].id = 'huhu';
+					document.addEventListener('click', function (e) {
+						if (e.target && e.target.className == 'piece') { console.log("hehe"); } else { console.log(e.target); }
+					})
 
 					data[0].addEventListener("click", displayDate);
-						function displayDate() {
-							console.log("hehe");
-						}
+					function displayDate() {
+						console.log("hehe");
+					}
 					t = document.createTextNode("HTML & CSS");
 					s = document.createTextNode("Javascript");
-					
-						y[0].appendChild(s);
-						y[0].id = "gugu";
-						document.getElementById("gugu").onclick = function () {
-							console.log('AHOJ');
-							$('html,body').animate({
-        scrollTop: $(".DRUHA").offset().top},
-        'slow');
-						}
-						y[0].classList.add("someclass");
-						x[0].classList.add('someclass');
-						x[0].addEventListener("click", displayDate);
-						function displayDate() {
+
+					y[0].appendChild(s);
+					y[0].id = "gugu";
+					document.getElementById("gugu").onclick = function () {
+						console.log('AHOJ');
+						$('html,body').animate({
+							scrollTop: $(".DRUHA").offset().top
+						},
+							'slow');
+					}
+					y[0].classList.add("someclass");
+					x[0].classList.add('someclass');
+					x[0].addEventListener("click", displayDate);
+					function displayDate() {
 						console.log("hehe");
-						}
-						y[0].addEventListener("click", displayDate);
-						function displayDate() {
-							console.log("hehe");
-						}
-						y[0].addEventListener("click", function (e) {
-							console.log("hehe");
-						}, false);
-						x[0].appendChild(t);
-						console.log(t);
-						console.log(s);
-						console.log("child appended");
-						y[0].classList.add("gegegege");
-						let label = document.getElementsByClassName('gegegege');
-						console.log(label[0]);
-						let javaaa = label[0];
-						let j = document.getElementsByClassName('piece gegegege').addEventListener("click", () => {
-							console.log("You knocked?");
-						});
-						console.log(javaaa);
-						javaaa.addEventListener("click", () => {
-							console.log("You knocked?");
-						});
-						label[0].onclick = function () { alert('blah'); };
-						label[0].onclick = function () {
-							console.log("UUUU");
-						};
-						y[0].classList.add('someclass');
-						x[0].classList.add('someclass');
-					
+					}
+					y[0].addEventListener("click", displayDate);
+					function displayDate() {
+						console.log("hehe");
+					}
+					y[0].addEventListener("click", function (e) {
+						console.log("hehe");
+					}, false);
+					x[0].appendChild(t);
+					console.log(t);
+					console.log(s);
+					console.log("child appended");
+					y[0].classList.add("gegegege");
+					let label = document.getElementsByClassName('gegegege');
+					console.log(label[0]);
+					let javaaa = label[0];
+					let j = document.getElementsByClassName('piece gegegege').addEventListener("click", () => {
+						console.log("You knocked?");
+					});
+					console.log(javaaa);
+					javaaa.addEventListener("click", () => {
+						console.log("You knocked?");
+					});
+					label[0].onclick = function () { alert('blah'); };
+					label[0].onclick = function () {
+						console.log("UUUU");
+					};
+					y[0].classList.add('someclass');
+					x[0].classList.add('someclass');
+
 				}
 
 				HTML();
@@ -214,6 +214,7 @@
 				x[0].classList.remove("someClass");
 				y[0].removeChild(s);
 				y[0].classList.remove("someClass");
+
 				console.log("child removed" + t);
 				piecesObj.animate({
 					duration: 600,
@@ -273,7 +274,7 @@
 
 	</script>
 	<script>
-		document.getElementById("gugu").{
+		document.getElementById("gugu").click(){
 			console.log('AHOJ');
 		}
 

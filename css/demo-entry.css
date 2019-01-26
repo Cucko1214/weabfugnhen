@@ -30,14 +30,14 @@
 }
 .page-nav {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 10%;
+	height: 10%;
 	top: 0;
-	display: flex;
+		display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	opacity: 0;
+	opacity: 1;
 	font-family: var(--content-font);
 }
 section {
@@ -55,6 +55,9 @@ section {
 	margin: 1em 0 0 0;
 	color: var(--body-text-alt);
 	position: relative;
+	z-index: 2147483647  !important;
+	opacity: 1 !important;
+	│ 
 }
 
 .page-nav__item--close:hover,
@@ -71,6 +74,8 @@ section {
 	font-family: var(--content-font);
 	color: var(--body-text-alt);
 	position: relative;
+	top: 30%;
+left: -10%;
 }
 
 .page-nav--open ~ .content__title {
@@ -85,7 +90,7 @@ section {
 	top: 50%;
 	margin-left: calc(-1 * var(--pieces-height) * calc(888/1000) / 2);
 	margin-top: calc(-1 * var(--pieces-height) / 2);
-	
+
 }
 h3 {
 font-size: 100px !important;
